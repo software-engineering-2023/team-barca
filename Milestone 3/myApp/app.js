@@ -70,4 +70,7 @@ app.get('/reminders', function(req,res){
 app.get('/issue', function(req,res){
     res.render('issue');
 });
+app.get('/transandpay', function(req,res){
+    res.render('transandpay');
+});
 app.listen(3000);
