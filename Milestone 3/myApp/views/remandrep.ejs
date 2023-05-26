@@ -4,6 +4,7 @@
 <style>
 body{
     background-color: #212121;
+    background-image: url("back.jfif");
 }
 .card {
   position: relative;
@@ -105,8 +106,8 @@ body{
           <p class="heading">reports
           </p><p class="para">
           report an issue with the bank or the website  </p>
-          <button  onclick="redirectToYouTube()" class="btn">bank issue</button>
-          <button   onclick="redirectToYouTube()" class="btn">technical issue</button>
+          <button  onclick="redirectToYouTub()" class="btn">bank issue</button>
+          <button   onclick="redirectToYouTub()" class="btn">technical issue</button>
         </div>
       </div>
       
@@ -122,7 +123,11 @@ body{
       </div>
       <script>
         function redirectToYouTube() {
-          window.location.href = 'transactionhistory';
+          window.location.href = 'reminders';
+        
+        }
+        function redirectToYouTub() {
+          window.location.href = 'issue';
         
         }
       </script>

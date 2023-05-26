@@ -64,5 +64,10 @@ app.get('/userhomepage', function(req,res){
     res.render('userhomepage');
 });
 
-
+app.get('/reminders', function(req,res){
+    res.render('reminders');
+});
+app.get('/issue', function(req,res){
+    res.render('issue');
+});
 app.listen(3000);
