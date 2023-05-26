@@ -14,6 +14,16 @@ background-image: url("back.jfif");
  
   text-align: center;
 }
+.popup{
+
+}
+.popup .popupstuff{
+  visibility: hidden;
+}
+
+.popup .show {
+  visibility: visible;
+}
 
 .image {
 display: block;
@@ -520,8 +530,11 @@ translate: -25% -5%;
   </style>
 </head>
 <script>
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
 
-  
 </script>
 
 
@@ -537,6 +550,7 @@ translate: -25% -5%;
     </svg>
     <span class="text">Open new Bank account</span>
   </button>
+ 
   <div style="width: 800px; left: 10%; position:absolute">
     <h1 style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; left: 5%;">All your banking needs in 1 place</h1>
     <img class="image2" src="money.jpg" >
@@ -619,7 +633,21 @@ translate: -25% -5%;
 
 
 
-
+<div style="right: 20px; top: 5px; width: 50px; position: absolute;">
+  <button onclick="myFunction()">
+    <img src="notification.png" style="right: 0px; top: 0px; width: 50px;">
+  </button>
+  
+</div>
+<span class="popup" style="right: 25px; position: absolute; z-index: 1;" >
+  <table class="popupstuff"  id="myPopup" style="width: 400px;border-left: 2px solid gold; border-right: 2px solid gold; border-top: 2px solid gold; border-collapse: collapse; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #212121;">
+    <tr style="border-bottom: 4px solid gold;">
+    <td style="padding-left: 20px; width: 300px; height: 80px;"><a href="glitchresponse">RE: system glitch</a></td>
+<td><img src="important.png" style="width: 50px;"></td></tr>
+<tr style="border-bottom: 4px solid gold;">
+<td style="padding-left: 20px; height: 80px;"><a href="gasbill">REMINDER: gas bill due 06/06/2023</a></td>
+<td></td>
+</tr></table></span>
 
 <div style="text-align: center;">
  
@@ -746,6 +774,8 @@ translate: -25% -5%;
 
           </div>
 </div>
+
+
 </body>
 
 
