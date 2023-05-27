@@ -16,12 +16,36 @@ app.get('/', function(req,res){
     res.render('bourbon');
 });
 
+app.get('/accountchoose', function(req,res){
+    res.render('accountchoose');
+});
+
+app.get('/accounthistory1', function(req,res){
+    res.render('accounthistory1');
+});
+
+app.get('/accounthistory2', function(req,res){
+    res.render('accounthistory2');
+});
+
 app.get('/close', function(req,res){
     res.render('close');
 });
 
 app.get('/closed', function(req,res){
     res.render('closed');
+});
+
+app.get('/cardchoose', function(req,res){
+    res.render('cardchoose');
+});
+
+app.get('/cardhistory1', function(req,res){
+    res.render('cardhistory1');
+});
+
+app.get('/cardhistory2', function(req,res){
+    res.render('cardhistory2');
 });
 
 app.get('/creditcard', function(req,res){
@@ -60,9 +84,6 @@ app.get('/signup', function(req,res){
     res.render('signup');
 });
 
-app.get('/transactionhistory', function(req,res){
-    res.render('transactionhistory');
-});
 
 app.get('/transactions', function(req,res){
     res.render('transactions');
