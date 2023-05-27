@@ -16,13 +16,15 @@ background-image: url("back.jfif");
 }
 .popup{
 
-}
+pointer-events: none;}
 .popup .popupstuff{
   visibility: hidden;
+  pointer-events:all;
 }
 
 .popup .show {
   visibility: visible;
+  pointer-events:all;
 }
 
 .image {
@@ -534,6 +536,10 @@ function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
+    function redirectToYouTube() {
+      window.location.href = 'open';
+    
+    }
 
 </script>
 
@@ -555,7 +561,12 @@ function myFunction() {
     <h1 style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; left: 5%;">All your banking needs in 1 place</h1>
     <img class="image2" src="money.jpg" >
     <h2 style="position: absolute; bottom: 3px; left: 10%; right: auto; text-align: center;display: block; background-color: #868686; opacity: 0.8; width: 80%; margin-left: auto; margin-right: auto;">Choose your preferred action, banking made easy.</h2></img>
-  </div>  
+  </div> 
+  <div style="width: 800px; left: 10%; bottom: -600px; position:absolute">
+    <h1 style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; left: 5%;">NEWS: deal acquired with NATZAS over fundraising attemps</h1>
+    <img class="image2" src="business.jpg" >
+    <h2 style="position: absolute; bottom: 3px; left: 10%; right: auto; text-align: center;display: block; background-color: #868686; opacity: 0.8; width: 80%; margin-left: auto; margin-right: auto;">The deal opens new opportunities to expand and grow our existing branches</h2></img>
+  </div> 
   <div class="bodydrop"></div>
   <span aria-hidden="true">
     <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -759,7 +770,7 @@ function myFunction() {
 
         <div class="">
           
-          <img class="image" src="points.jpg" alt="" style="margin: auto;" />
+          <img class="image" src="pay.jpg" alt="" style="margin: auto;" />
         
           <form>
             <div class="user-box">

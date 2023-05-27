@@ -44,6 +44,14 @@ app.get('/loanapply', function(req,res){
     res.render('loanapply');
 });
 
+app.get('/open', function(req,res){
+    res.render('open');
+});
+
+app.get('/opened', function(req,res){
+    res.render('opened');
+});
+
 app.get('/remandrep', function(req,res){
     res.render('remandrep');
 });
