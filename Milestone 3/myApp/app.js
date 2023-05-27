@@ -60,6 +60,14 @@ app.get('/creditcardpoint', function(req,res){
     res.render('creditcardpoint');
 });
 
+app.get('/gasbill', function(req,res){
+    res.render('gasbill');
+});
+
+app.get('/glitchresponse', function(req,res){
+    res.render('glitchresponse');
+});
+
 app.get('/loan', function(req,res){
     res.render('loan');
 });
