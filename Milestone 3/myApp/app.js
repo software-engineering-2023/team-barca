@@ -27,7 +27,15 @@ app.get('/accounthistory1', function(req,res){
 app.get('/accounthistory2', function(req,res){
     res.render('accounthistory2');
 });
-
+app.get('/adminlogin', function(req,res){
+    res.render('adminlogin');
+});
+app.get('/banker', function(req,res){
+    res.render('banker');
+});
+app.get('/bankerlogin', function(req,res){
+    res.render('bankerlogin');
+});
 app.get('/close', function(req,res){
     res.render('close');
 });
@@ -47,6 +55,9 @@ app.get('/cardhistory1', function(req,res){
 app.get('/cardhistory2', function(req,res){
     res.render('cardhistory2');
 });
+app.get('/cardreqs', function(req,res){
+    res.render('cardreqs');
+});
 
 app.get('/creditcard', function(req,res){
     res.render('creditcard');
@@ -55,7 +66,9 @@ app.get('/creditcard', function(req,res){
 app.get('/creditcardapply', function(req,res){
     res.render('creditcardapply');
 });
-
+app.get('/closereqs', function(req,res){
+    res.render('openreqs');
+});
 app.get('/creditcardpoint', function(req,res){
     res.render('creditcardpoint');
 });
@@ -75,13 +88,38 @@ app.get('/loan', function(req,res){
 app.get('/loanapply', function(req,res){
     res.render('loanapply');
 });
+app.get('/loanreqs', function(req,res){
+    res.render('loanreqs');
+});
 
+app.get('/issuereply', function(req,res){
+    res.render('issuereply');
+});
 app.get('/open', function(req,res){
     res.render('open');
 });
 
+app.get('/announce', function(req,res){
+    res.render('announce');
+});
+
 app.get('/opened', function(req,res){
     res.render('opened');
+});
+app.get('/openreqs', function(req,res){
+    res.render('openreqs');
+});
+app.get('/closereqdone', function(req,res){
+    res.render('openreqdone');
+});
+app.get('/cardreqdone', function(req,res){
+    res.render('openreqdone');
+});
+app.get('/loanreqdone', function(req,res){
+    res.render('openreqdone');
+});
+app.get('/openreqdone', function(req,res){
+    res.render('openreqdone');
 });
 
 app.get('/pay', function(req,res){
@@ -117,6 +155,9 @@ app.get('/reminderadded', function(req,res){
 app.get('/reminderset', function(req,res){
     res.render('reminderset');
 });
+app.get('/reply', function(req,res){
+    res.render('reply');
+});
 app.get('/transfer', function(req,res){
     res.render('transfer');
 });
@@ -132,4 +173,14 @@ app.get('/issuesent', function(req,res){
 app.get('/transandpay', function(req,res){
     res.render('transandpay');
 });
+app.get('/admin', function(req,res){
+    res.render('admin');
+});
+app.get('/adminrep', function(req,res){
+    res.render('adminrep');
+});
+app.get('/objectives', function(req,res){
+    res.render('objectives');
+});
+
 app.listen(3000);
