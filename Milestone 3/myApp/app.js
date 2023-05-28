@@ -84,6 +84,14 @@ app.get('/opened', function(req,res){
     res.render('opened');
 });
 
+app.get('/pay', function(req,res){
+    res.render('pay');
+});
+
+app.get('/paying', function(req,res){
+    res.render('paying');
+});
+
 app.get('/remandrep', function(req,res){
     res.render('remandrep');
 });
@@ -100,12 +108,26 @@ app.get('/transactions', function(req,res){
 app.get('/userhomepage', function(req,res){
     res.render('userhomepage');
 });
-
 app.get('/reminders', function(req,res){
     res.render('reminders');
 });
+app.get('/reminderadded', function(req,res){
+    res.render('reminderadded');
+});
+app.get('/reminderset', function(req,res){
+    res.render('reminderset');
+});
+app.get('/transfer', function(req,res){
+    res.render('transfer');
+});
+app.get('/transferring', function(req,res){
+    res.render('transferring');
+});
 app.get('/issue', function(req,res){
     res.render('issue');
+});
+app.get('/issuesent', function(req,res){
+    res.render('issuesent');
 });
 app.get('/transandpay', function(req,res){
     res.render('transandpay');
