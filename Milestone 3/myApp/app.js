@@ -55,6 +55,12 @@ app.get('/cardhistory1', function(req,res){
 app.get('/cardhistory2', function(req,res){
     res.render('cardhistory2');
 });
+app.get('/cardstolen', function(req,res){
+    res.render('cardstolen');
+});
+app.get('/stolenchoice', function(req,res){
+    res.render('stolenchoice');
+});
 app.get('/cardreqs', function(req,res){
     res.render('cardreqs');
 });
