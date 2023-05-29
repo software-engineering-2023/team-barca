@@ -92,8 +92,14 @@ app.get('/loanreqs', function(req,res){
     res.render('loanreqs');
 });
 
-app.get('/issuereply', function(req,res){
-    res.render('issuereply');
+app.get('/replybanker', function(req,res){
+    res.render('replybanker');
+});
+app.get('/replybanker', function(req,res){
+    res.render('replybanker');
+});
+app.get('/bankerrep', function(req,res){
+    res.render('bankerrep');
 });
 app.get('/open', function(req,res){
     res.render('open');
@@ -118,7 +124,7 @@ app.get('/cardreqdone', function(req,res){
 app.get('/loanreqdone', function(req,res){
     res.render('openreqdone');
 });
-app.get('/openreqdone', function(req,res){
+app.get('/accountreqdone', function(req,res){
     res.render('openreqdone');
 });
 
