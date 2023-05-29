@@ -150,6 +150,10 @@ app.get('/signup', function(req,res){
     res.render('signup');
 });
 
+app.get('/signedup', function(req,res){
+    res.render('signedup');
+});
+
 
 app.get('/transactions', function(req,res){
     res.render('transactions');
